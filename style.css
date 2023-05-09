@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    width: 1440px;
+  
+}
+.container{
+    flex-grow: 1;
+    display: flex;
+    font-family: 'Space Grotesk', sans-serif;
+
+    /* width: 600px ; */
+}
+.cards{
+    margin-top: 100px;
+}
+.backgroundimg-cards{
+    position: relative;
+}
+.card-back{
+    position: absolute;
+    left: 250px;
+    margin-top: 300px;
+    border-radius: 10px;
+    color: white;
+}
+.card-front{
+    position: absolute;
+    transform: translateX(-35%);
+    color: white;
+     /* left: 180px;   this also works too */
+}
+.card-front-img{ 
+    border-radius: 10px;
+    position: relative;
+}
+.card-details{
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+}
+.sensitive-details{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 14em;
+    /* justify-content: space-around; */
+}
+.cardfront-number{
+    font-size: 25px;
+    word-spacing: 5px;
+    letter-spacing: 6px;
+    /* padding-left: 50px; */
+}
+.card-back-img{ 
+    border-radius: 10px;
+    position: relative;
+}
+.card-code{
+    position: absolute;
+    bottom: 120px;
+    left: 350px;
+}
+
+.registration-page{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+    height: 100vh;
+    margin: auto;
+    gap: 20px;
+}
+input{
+    border: 2px solid hsl(270, 30%, 96%);
+    width: 35%;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* input:focus{
+    border: 1px solid hsl(279, 6%, 55%);
+    /* color: hsl(278, 68%, 11%);
+} */
+input::placeholder{
+    font-size: 18px;
+    text-align: center;
+    color:hsl(279, 6%, 55%);
+}
+.name-input
+.card-number{
+    position: relative;
+}
+label {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  
+}
+  .dates-input {
+    display: flex;
+    flex-direction: column;
+    margin-left: 330px;
+  }
+  .input-labels{
+    display: flex;
+    gap: 70px;
+    padding-bottom: 10px;
+  }
+  .inputs-month-year-cvc{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 5px;
+  }
+  .expiry-month,
+  .expiry-year  {
+    width:8%;
+  }
+  .cvc-no-input{
+    width: 20%;
+    margin-left: 20px;
+  }
+  .btn-confirm{
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    margin: 30px auto;
+    width: 55%;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translateX(-50%);
+/* box-shadow: 2px 4px 1 hsl(278, 56%, 33%); */
+  }
+  .btn-confirm:hover{
+background-color: white;
+color: black;
+cursor: pointer;
+  }
+
+  /*Thankyou card*/
+  .thankyou-card{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 30px;
+  }
+  .thankyou-card h2{
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  .thankyou-card p{
+color:  hsl(279, 6%, 55%);
+  }
+  .btn-continue{
+padding:0.7rem 7rem;
+display: block;
+background-color:hsl(278, 68%, 11%);
+color: white;
+border-radius: 5px;
+  }
+  .btn-continue:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+      }
